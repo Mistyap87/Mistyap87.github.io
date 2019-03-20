@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<title>About-Misty Gonzales</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<header>
+<style>
+html, body, h1, h2, h3, h4, h5, h6 {
+  font-family: "Comic Sans MS", sans-serif;
+}
+body, html {height: 100%}
+
+
+	
+	
+</style>
+</header>
+<body>
+<!--Header-->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <!-- Right-sided navbar links.-->
+     <div class="w3-right w3-hide-small">
+	  <a href="index.html" class="w3-bar-item w3-button"><i class="fa fa-home" aria-hidden="true"></i>Home </a>
+      <a href="about.html" class="w3-bar-item w3-button"><i class="fa fa-user" aria-hidden="true"></i>About</a>
+      <a href="resume.html" class="w3-bar-item w3-button"><i class="fa fa-pencil-square" aria-hidden="true"></i>Resume</a>
+      <a href="contact.html" class="w3-bar-item w3-button"><i class="fa fa-envelope" aria-hidden="true"></i>Contact</a>
+
+    </div>
+  </div>
+</div>
+
+<!--about-->
+<header class="w3-container w3-teal w3-center" style="padding:50px 16px">
+  <h1 class="w3-margin w3-jumbo" style="font-weight:bold;text-decoration: underline">About Me</h1>
+  <p class="w3-xlarge">Misty Gonzales</p>
+ 
+</header>
+<div class="w3-content w3-justify  w3-padding 12" id="about">
+	<h2>Biography</h2>
+	<hr class="w3-opacity">
+	<p> My name is Misty and I am originally from Danville, IL but I have lived in Roswell, NM for 10 years now. I served in the United States Army for a little over 4 years and that is how I met my wonderful husband. Together we have two dogs Lexi and Sadie or I as like to call them fur-babies. In my free time you can find me gardening, exercising outdoors, jet skiing at the lake, reading, painting, or cooking. I am also an amateur photographer because I love to be able to capture moments in life and look back on them. I also love to travel and capture all of the places that I visit. it is something I enjoy and it helps to keep me involved in technology.</p>
+	<p> I became passionate about technology after I was hired at New Mexico Military Institute as an Administrative Assistant for the Information Technology department. It wasn’t until then that I realized how much we use technology to enhance our everyday lives. From wearing activity trackers to improve our health, to being able to read thousands of books from our mobile devices, and being able to get information on any topic in the blink of an eye. I am now the Academic Technologist at New Mexico Military Institute. I help teachers integrate technology in the classroom and build the technology training curriculum for new cadets. I think this is very important because technology is changing every day and I think that it is important to expose children at a young age so they can build the 21st century skills they need to become the leaders of tomorrow. In order to expose them to this technology we must integrate new technology innovation into our classrooms. That is where I can help teachers as an integration specialist.</p>
+</div>
+
+
+<!--Slideshoe-->
+
+<div class="w3-content" style="max-width:800px">
+  <img class="mySlides" src="Slide1.jpg" style="width:100%;display:none">
+  <img class="mySlides" src="Slide2.jpg" style="width:100%">
+  <img class="mySlides" src="Slide3.jpg" style="width:100%;display:none">
+  
+
+  <div class="w3-row-padding w3-section">
+
+    <div class="w3-col s4">
+		
+	
+	
+      <img class="demo w3-opacity w3-hover-opacity-off" src="Slide1.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(1)">
+    </div>
+    <div class="w3-col s4">
+      <img class="demo w3-opacity w3-hover-opacity-off" src="Slide2.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(2)">
+    </div>
+    <div class="w3-col s4">
+      <img class="demo w3-opacity w3-hover-opacity-off" src="Slide3.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(3)">
+    </div>
+  </div>
+</div>
+</div>
+<script>
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " w3-opacity-off";
+}
+</script>
+
+  
+</div>
+
+<!--Footer-->
+<footer class="w3-center w3-light-grey w3-padding-24 w3-large">
+	<p>Created by Misty Gonzales 2019</p>
+</footer>
+</body>
+</html>
